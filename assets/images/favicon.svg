@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64">
+
+    <!-- Lavender background -->
+    <rect width="64" height="64" rx="14"
+          fill="#F0E5FA"/>
+
+    <!-- Letter A -->
+    <path d="M15 49 L32 13 L49 49
+             M22 35 H42"
+          fill="none"
+          stroke="#8054A8"
+          stroke-width="6"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Signature dot -->
+    <circle cx="51" cy="14" r="4"
+            fill="#C69BE8"/>
+
+</svg>
