@@ -40,8 +40,12 @@ This website is hosted using [GitHub Pages](https://pages.github.com/).
 
 ## Usage & Attribution
 
-You are welcome to explore this repository and use it as a reference or starting point for creating your own portfolio. Feel free to adapt and modify the code to suit your needs. If you use or reproduce any part of this work, please provide appropriate credit by acknowledging this repository and its original author.
+You are welcome to explore this repository, learn from the implementation, and use it as a reference or starting point for your own portfolio. You may adapt and modify the code to suit your needs. If you reuse or reproduce any part of this work, please provide appropriate credit by acknowledging this repository and its original author.
 
-Please do not present the original design or work as your own.
+Please do not present the original work or design as your own.
+
+## Acknowledgements
+
+ChatGPT by OpenAI was used as an AI-assisted tool during development for coding guidance, troubleshooting, feedback, and refining certain aspects of the website. All content, design decisions, project selections, and final implementations were reviewed and directed by me.
 
 © 2026 Adrika Chowdhury. All rights reserved.
