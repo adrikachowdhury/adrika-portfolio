@@ -38,4 +38,10 @@ adrika-portfolio/
 This website is hosted using [GitHub Pages](https://pages.github.com/).
 ---
 
+## Usage & Attribution
+
+You are welcome to explore this repository and use it as a reference or starting point for creating your own portfolio. Feel free to adapt and modify the code to suit your needs. If you use or reproduce any part of this work, please provide appropriate credit by acknowledging this repository and its original author.
+
+Please do not present the original design or work as your own.
+
 © 2026 Adrika Chowdhury. All rights reserved.
