@@ -90,6 +90,24 @@ header {
     );
 }
 
+.hero-socials {
+    display: flex;
+    gap: 22px;
+    margin-top: 22px;
+}
+
+.hero-socials a {
+    color: #80639A;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hero-socials a:hover {
+    color: #76519B;
+}
+
 .hero-content {
     max-width: 750px;
 }
@@ -871,5 +889,23 @@ footer {
 
     .pipeline-step {
         padding: 16px;
+    }
+}
+
+/* ==============================
+   Reduced Motion Accessibility
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
