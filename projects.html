@@ -80,22 +80,50 @@
                     </summary>
 
                     <div class="project-details">
-
+                    
                         <p>
-                            A document-grounded research assistant that
-                            retrieves relevant information from academic
-                            papers and generates answers based on the
-                            retrieved evidence.
+                            I am developing a research assistant that retrieves relevant
+                            information from academic papers and uses it to generate
+                            answers grounded in the source documents. The project
+                            explores how Retrieval-Augmented Generation (RAG) can
+                            make it easier to find information in research papers
+                            without relying entirely on an LLM's existing knowledge.
                         </p>
-
+                    
                         <p>
-                            The application uses vector search for document
-                            retrieval and a Gemini model for answer generation,
-                            with a FastAPI backend and Docker deployment.
+                            <strong>Approach:</strong> I used PyMuPDF to extract text
+                            from PDF documents and divided the extracted content into
+                            smaller, overlapping chunks. These chunks were converted
+                            into vector embeddings using Google's Gemini embedding
+                            model and stored in a local Qdrant database. When a
+                            question is submitted, the application retrieves relevant
+                            chunks and passes them to a Gemini model to generate
+                            an answer based on the retrieved content.
                         </p>
-
+                    
+                        <p>
+                            <strong>Implementation:</strong> I built the backend
+                            using FastAPI and containerised the application with
+                            Docker. The project also uses a checkpoint mechanism
+                            during document processing to help manage the indexing
+                            process.
+                        </p>
+                    
+                        <p>
+                            <strong>Current scope:</strong> The initial version has
+                            been tested with two research papers, producing 92
+                            document chunks for retrieval. It serves as a working
+                            prototype for exploring document processing, vector
+                            search, and LLM-based question answering.
+                        </p>
+                    
+                        <p>
+                            <strong>Technologies:</strong> Python · PyMuPDF ·
+                            Gemini API · Qdrant · FastAPI · Docker
+                        </p>
+                    
                         <p><strong>Year:</strong> 2026</p>
-
+                    
                     </div>
 
                 </details>
@@ -218,7 +246,7 @@
                             <h4>PDCOVIDNet-2</h4>
 
                             <p class="project-tech">
-                                Python · Gemini API · Qdrant · FastAPI · Docker
+                                Python · PyTorch · Torchvision · Scikit-learn
                             </p>
 
                             <span class="project-expand">View details +</span>
@@ -226,31 +254,65 @@
                         </div>
 
                     </summary>
-
+                    
                     <div class="project-details">
-
+                    
                         <p>
-                            A document-grounded research assistant that
-                            retrieves relevant information from academic
-                            papers and generates answers based on the
-                            retrieved evidence.
+                            A course project developed for Computer Vision and
+                            Robotics, implementing a custom convolutional neural
+                            network to classify chest X-ray images into three
+                            categories: COVID-19, viral pneumonia, and normal.
                         </p>
-
+                    
                         <p>
-                            The application uses vector search for document
-                            retrieval and a Gemini model for answer generation,
-                            with a FastAPI backend and Docker deployment.
+                            <strong>Approach:</strong> The model uses two parallel
+                            branches of convolutional blocks with different
+                            dilation rates (1 and 2) to extract image features.
+                            Their outputs are combined and passed through
+                            additional convolutional and fully connected layers
+                            for classification.
                         </p>
-
+                    
+                        <p>
+                            <strong>Implementation:</strong> I worked with the
+                            Chest X-ray Images dataset from Kaggle. Images were
+                            resized to 224 × 224 and converted to grayscale.
+                            To address class imbalance, the training process
+                            incorporates WeightedRandomSampler and class-weighted
+                            loss, along with image augmentation techniques.
+                            Model performance is evaluated using accuracy,
+                            precision, recall, and macro F1-score.
+                        </p>
+                    
+                        <p>
+                            The implementation was inspired by the research paper
+                            <em>PDCOVIDNet: A Parallel-Dilated Convolutional Neural
+                            Network Architecture for Detecting COVID-19 from
+                            Chest X-ray Images</em> (Chowdhury et al., 2020).
+                        </p>
+                    
+                        <p>
+                            <strong>Technologies:</strong> Python · PyTorch ·
+                            Torchvision · NumPy · Pandas · Scikit-learn ·
+                            Matplotlib
+                        </p>
+                    
                         <p><strong>Year:</strong> 2026</p>
-
+                    
                         <a href="https://github.com/adrikachowdhury/PDCOVIDNet-2"
                            target="_blank"
                            rel="noopener noreferrer"
                            class="project-link">
                             GitHub Repository ↗
                         </a>
-
+                    
+                        <a href="https://doi.org/10.1007/s13755-020-00119-3"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            Reference Paper ↗
+                        </a>
+                    
                     </div>
 
                 </details>
@@ -267,7 +329,7 @@
 
                         <div class="project-info">
 
-                            <h4>IronyScope: Irony Detection in Tweets</h4>
+                            <h4>Irony Detection in Tweets</h4>
 
                             <p class="project-tech">
                                 Python · NLTK · Scikit-learn · TF-IDF
@@ -282,24 +344,50 @@
                     <div class="project-details">
 
                         <p>
-                            A text classification project focused on
-                            identifying ironic content in tweets using
-                            Natural Language Processing techniques.
+                            An NLP-based binary text classification project developed
+                            for the Introduction to Data Science course. The project
+                            focuses on detecting irony in Twitter text by classifying
+                            tweets as either ironic or non-ironic.
                         </p>
 
                         <p>
-                            The implementation uses NLTK for text
-                            preprocessing and n-gram TF-IDF features
-                            with a Multi-Layer Perceptron classifier.
+                            The workflow includes tokenisation, language detection,
+                            emoticon-to-text conversion, accented character removal,
+                            stemming, and stopword removal. The processed text is
+                            transformed into n-gram TF-IDF features. Five
+                            Scikit-learn classifiers were implemented and compared:
+                            Multinomial Naive Bayes, LinearSVC, Stochastic Gradient
+                            Descent (SGD), Decision Tree, and Multi-layer Perceptron
+                            (MLP).
                         </p>
 
-                        <p><strong>Year:</strong> 2026</p>
+                        <p>
+                            <strong>Evaluation:</strong> In the original comparative
+                            evaluation, SGD achieved the best reported performance,
+                            with 65% accuracy and a 65% micro-average F1-score.
+                            MLP achieved an F1-score of 55% in that comparison.
+                            The latest notebook also contains a separate MLP
+                            implementation, with a reported score of 55%.
+                        </p>
+
+                        <p>
+                            <strong>Approach:</strong> Text preprocessing ·
+                            TF-IDF feature extraction · Machine learning
+                            classifier comparison · Performance evaluation
+                        </p>
+
+                        <p>
+                            <strong>Technologies:</strong> Python · NLTK ·
+                            Scikit-learn · Pandas · NumPy
+                        </p>
+
+                        <p><strong>Year:</strong> 2024</p>
 
                         <a href="https://github.com/adrikachowdhury/IronyScope"
                            target="_blank"
                            rel="noopener noreferrer"
                            class="project-link">
-                            GitHub Repository ↗
+                               GitHub Repository ↗
                         </a>
 
                     </div>
@@ -346,17 +434,25 @@
                     <div class="project-details">
 
                         <p>
-                            A collaborative UI design designed on behalf
-                            of TechnoVista Ltd. presents 'Vista.Q', a
-                            real-time quality tracking system for
-                            garment factories.
+                            A collaborative UI/UX design project developed
+                            during my internship at TechnoVista Ltd. The project
+                            involved designing Vista.Q, a real-time quality
+                            tracking system intended for garment factories.
                         </p>
 
                         <p>
-                            It streamlines production, reduces defects, and
-                            enhances efficiency through a user-friendly,
-                            device-compatible interface.
+                            The interface was designed to support production
+                            monitoring and quality management, with a focus on
+                            making information accessible through a clear,
+                            user-friendly, and device-compatible design.
                         </p>
+
+                        <p>
+                            <strong>Focus:</strong> UI design · Wireframing ·
+                            Prototyping
+                        </p>
+
+                        <p><strong>Tools:</strong> Figma</p>
 
                         <p><strong>Year:</strong> 2025</p>
 
@@ -389,24 +485,31 @@
                     </summary>
 
                     <div class="project-details">
-
+                    
                         <p>
-                            A collaborative UI design designed on behalf
-                            of TechnoVista Ltd.representing the
-                            Quality Information System (QIS), a digital
-                            platform by the Ministry of Agriculture of
-                            Bangladesh to deliver fast, transparent, and
-                            accessible agricultural services.
+                            A collaborative UI design project developed during
+                            my internship at TechnoVista Ltd. It focused on the
+                            Quality Information System (QIS), a digital platform
+                            by the Ministry of Agriculture of Bangladesh designed
+                            to provide accessible agricultural services.
                         </p>
-
+                    
                         <p>
-                             It highlights weather updates, service access,
-                             and user-friendly navigation to support farmers
-                             and stakeholders.
+                            The design incorporated features such as weather
+                            updates and access to different services, with an
+                            emphasis on clear navigation and a user-friendly
+                            interface for farmers and other stakeholders.
                         </p>
-
+                    
+                        <p>
+                            <strong>Focus:</strong> UI design · Wireframing ·
+                            Prototyping
+                        </p>
+                    
+                        <p><strong>Tools:</strong> Figma</p>
+                    
                         <p><strong>Year:</strong> 2024</p>
-
+                    
                     </div>
 
                 </details>
@@ -434,35 +537,31 @@
                         </div>
 
                     </summary>
-
+                    
                     <div class="project-details">
 
                         <p>
-                            A collaborative UI design project for a
-                            comprehensive accommodation booking system
-                            that streamlines the process of finding and
-                            reserving various types of lodgings,
-                            including hotels, apartments, and unique
-                            private rentals. Unlike traditional booking
-                            platforms focused on large-scale hospitality,
-                            HomiFi targets the growing need for affordable,
-                            locally hosted options such as private rooms and smaller
-                            apartments—accommodations that often lack
-                            visibility due to limited resources. 
+                            A collaborative UI design project for an
+                            accommodation booking system that brings together
+                            different types of stays, including hotels,
+                            apartments, private rooms, and locally hosted
+                            rentals.
                         </p>
 
                         <p>
-                            The system addresses this gap by providing a
-                            unified platform where users can easily
-                            search, view, and book a wide range of stays.
-                            This project meets both functional and
-                            non-functional requirements, offering a clear
-                            roadmap for developers and stakeholders to
-                            align on goals, features, and constraints,
-                            ultimately ensuring a smooth and inclusive
-                            booking experience.
-                        
+                            The project focused on making affordable and
+                            locally hosted accommodation options easier to
+                            discover and book. The proposed platform allows
+                            users to search and explore different stays through
+                            a unified interface.
                         </p>
+
+                        <p>
+                            <strong>Focus:</strong> UI design · Wireframing ·
+                            Prototyping · Requirements Analysis
+                        </p>
+
+                        <p><strong>Tools:</strong> Figma</p>
 
                         <p><strong>Year:</strong> 2024</p>
 
