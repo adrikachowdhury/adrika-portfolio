@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Projects | Adrika Chowdhury</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg?v=2">
+    <link rel="icon" type="image/svg+xml"
+          href="./assets/images/favicon.svg?v=2">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +18,9 @@
     <header>
         <nav class="navbar">
 
-            <a href="index.html" class="logo">adrika<span>.</span></a>
+            <a href="index.html" class="logo">
+                adrika<span>.</span>
+            </a>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -29,629 +32,1319 @@
         </nav>
     </header>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <main>
 
-        <div class="section-heading">
+        <!-- ===================================== -->
+        <!-- PROJECTS HEADING -->
+        <!-- ===================================== -->
 
-            <p class="section-label">WHAT I'VE BEEN WORKING ON</p>
+        <section id="projects" class="projects">
 
-            <h2>My <span>Projects</span></h2>
+            <div class="section-heading">
 
-            <p>
-                A collection of projects exploring Artificial Intelligence,
-                Natural Language Processing, and practical applications
-                of machine learning alongside other side projects.
-            </p>
+                <p class="section-label">WHAT I'VE BEEN WORKING ON</p>
 
-        </div>
+                <h2>My <span>Projects</span></h2>
 
-        <!-- AI & Machine Learning Projects -->
-        <div class="project-category">
-
-            <h3 class="project-category-title">
-                AI & Machine Learning
-            </h3>
-
-            <div class="project-grid">
-
-                <!-- Research Evidence Agent -->
-                <details class="project-card">
-
-                    <summary>
-
-                        <div class="project-cover">
-                            <img src="assets/images/projects/research-evidence-agent.jpeg"
-                                 alt="Research Evidence Agent">
-                        </div>
-
-                        <div class="project-info">
-
-                            <h4>Research Evidence Agent (Ongoing)</h4>
-
-                            <p class="project-tech">
-                                Python · Gemini API · Qdrant · FastAPI · Docker
-                            </p>
-
-                            <span class="project-expand">View details +</span>
-
-                        </div>
-
-                    </summary>
-
-                    <div class="project-details">
-                    
-                        <p>
-                            I am developing a research assistant that retrieves relevant
-                            information from academic papers and uses it to generate
-                            answers grounded in the source documents. The project
-                            explores how Retrieval-Augmented Generation (RAG) can
-                            make it easier to find information in research papers
-                            without relying entirely on an LLM's existing knowledge.
-                        </p>
-                    
-                        <p>
-                            <strong>Approach:</strong> I used PyMuPDF to extract text
-                            from PDF documents and divided the extracted content into
-                            smaller, overlapping chunks. These chunks were converted
-                            into vector embeddings using Google's Gemini embedding
-                            model and stored in a local Qdrant database. When a
-                            question is submitted, the application retrieves relevant
-                            chunks and passes them to a Gemini model to generate
-                            an answer based on the retrieved content.
-                        </p>
-                    
-                        <p>
-                            <strong>Implementation:</strong> I built the backend
-                            using FastAPI and containerised the application with
-                            Docker. The project also uses a checkpoint mechanism
-                            during document processing to help manage the indexing
-                            process.
-                        </p>
-                    
-                        <p>
-                            <strong>Current scope:</strong> The initial version has
-                            been tested with two research papers, producing 92
-                            document chunks for retrieval. It serves as a working
-                            prototype for exploring document processing, vector
-                            search, and LLM-based question answering.
-                        </p>
-                    
-                        <p>
-                            <strong>Technologies:</strong> Python · PyMuPDF ·
-                            Gemini API · Qdrant · FastAPI · Docker
-                        </p>
-                    
-                        <p><strong>Year:</strong> 2026</p>
-                    
-                    </div>
-
-                </details>
-
-                <!-- NLP Study Assistant -->
-                <details class="project-card">
-
-                    <summary>
-
-                        <div class="project-cover">
-                            <img src="assets/images/projects/nlp-study-assistant.png"
-                                 alt="NLP Study Assistant">
-                        </div>
-
-                        <div class="project-info">
-
-                            <h4>NLP Study Assistant</h4>
-
-                            <p class="project-tech">
-                                Python · Gemini API · Google GenAI SDK
-                            </p>
-
-                            <span class="project-expand">View details +</span>
-
-                        </div>
-
-                    </summary>
-
-                    <div class="project-details">
-
-                        <p>
-                            A command-line AI learning assistant designed
-                            to support beginner NLP students. It provides
-                            concept explanations, practice questions, and
-                            feedback on submitted answers.
-                        </p>
-
-                        <p>
-                            The application also incorporates conversation
-                            history management, token tracking, response
-                            validation, and retry handling.
-                        </p>
-
-                        <p><strong>Year:</strong> 2026</p>
-
-                        <a href="https://github.com/adrikachowdhury/NLP-Study-Assistant"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            GitHub Repository ↗
-                        </a>
-
-                    </div>
-
-                </details>
-
-                <!-- Community Stress Tracker -->
-                <details class="project-card">
-
-                    <summary>
-
-                        <div class="project-cover">
-                            <img src="assets/images/projects/community-stress-tracker.png"
-                                 alt="Community Stress Tracker AI">
-                        </div>
-
-                        <div class="project-info">
-
-                            <h4>Community Stress Tracker AI</h4>
-
-                            <p class="project-tech">
-                                Python · PyTorch · DistilBERT · Streamlit
-                            </p>
-
-                            <span class="project-expand">View details +</span>
-
-                        </div>
-
-                    </summary>
-
-                    <div class="project-details">
-
-                        <p>
-                            A group-developed AI system that analyses
-                            social media text to estimate community
-                            stress levels across five emotion classes.
-                        </p>
-
-                        <p>
-                            Built using DistilBERT, the system achieved
-                            82.67% accuracy and includes stress scoring,
-                            score normalisation, and batch-level aggregation.
-                        </p>
-
-                        <p><strong>Year:</strong> 2026</p>
-
-                        <a href="https://github.com/adrikachowdhury/Community-Stress-Tracker-AI"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            GitHub Repository ↗
-                        </a>
-
-                    </div>
-
-                </details>
-
-                <!-- PDCOVIDNet-2 -->
-                <details class="project-card">
-
-                    <summary>
-
-                        <div class="project-cover">
-                            <img src="assets/images/projects/pdcovidnet-2.jpeg"
-                                 alt="PDCOVIDNet-2">
-                        </div>
-
-                        <div class="project-info">
-
-                            <h4>PDCOVIDNet-2</h4>
-
-                            <p class="project-tech">
-                                Python · PyTorch · Torchvision · Scikit-learn
-                            </p>
-
-                            <span class="project-expand">View details +</span>
-
-                        </div>
-
-                    </summary>
-                    
-                    <div class="project-details">
-                    
-                        <p>
-                            A course project developed for Computer Vision and
-                            Robotics, implementing a custom convolutional neural
-                            network to classify chest X-ray images into three
-                            categories: COVID-19, viral pneumonia, and normal.
-                        </p>
-                    
-                        <p>
-                            <strong>Approach:</strong> The model uses two parallel
-                            branches of convolutional blocks with different
-                            dilation rates (1 and 2) to extract image features.
-                            Their outputs are combined and passed through
-                            additional convolutional and fully connected layers
-                            for classification.
-                        </p>
-                    
-                        <p>
-                            <strong>Implementation:</strong> I worked with the
-                            Chest X-ray Images dataset from Kaggle. Images were
-                            resized to 224 × 224 and converted to grayscale.
-                            To address class imbalance, the training process
-                            incorporates WeightedRandomSampler and class-weighted
-                            loss, along with image augmentation techniques.
-                            Model performance is evaluated using accuracy,
-                            precision, recall, and macro F1-score.
-                        </p>
-                    
-                        <p>
-                            The implementation was inspired by the research paper
-                            <em>PDCOVIDNet: A Parallel-Dilated Convolutional Neural
-                            Network Architecture for Detecting COVID-19 from
-                            Chest X-ray Images</em> (Chowdhury et al., 2020).
-                        </p>
-                    
-                        <p>
-                            <strong>Technologies:</strong> Python · PyTorch ·
-                            Torchvision · NumPy · Pandas · Scikit-learn ·
-                            Matplotlib
-                        </p>
-                    
-                        <p><strong>Year:</strong> 2026</p>
-                    
-                        <a href="https://github.com/adrikachowdhury/PDCOVIDNet-2"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            GitHub Repository ↗
-                        </a>
-                    
-                        <a href="https://doi.org/10.1007/s13755-020-00119-3"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            Reference Paper ↗
-                        </a>
-                    
-                    </div>
-
-                </details>
-
-                <!-- Irony Detection -->
-                <details class="project-card">
-
-                    <summary>
-
-                        <div class="project-cover">
-                            <img src="assets/images/projects/irony-detection.jpeg"
-                                 alt="Irony Detection in Tweets">
-                        </div>
-
-                        <div class="project-info">
-
-                            <h4>Irony Detection in Tweets</h4>
-
-                            <p class="project-tech">
-                                Python · NLTK · Scikit-learn · TF-IDF
-                            </p>
-
-                            <span class="project-expand">View details +</span>
-
-                        </div>
-
-                    </summary>
-
-                    <div class="project-details">
-
-                        <p>
-                            An NLP-based binary text classification project developed
-                            for the Introduction to Data Science course. The project
-                            focuses on detecting irony in Twitter text by classifying
-                            tweets as either ironic or non-ironic.
-                        </p>
-
-                        <p>
-                            The workflow includes tokenisation, language detection,
-                            emoticon-to-text conversion, accented character removal,
-                            stemming, and stopword removal. The processed text is
-                            transformed into n-gram TF-IDF features. Five
-                            Scikit-learn classifiers were implemented and compared:
-                            Multinomial Naive Bayes, LinearSVC, Stochastic Gradient
-                            Descent (SGD), Decision Tree, and Multi-layer Perceptron
-                            (MLP).
-                        </p>
-
-                        <p>
-                            <strong>Evaluation:</strong> In the original comparative
-                            evaluation, SGD achieved the best reported performance,
-                            with 65% accuracy and a 65% micro-average F1-score.
-                            MLP achieved an F1-score of 55% in that comparison.
-                            The latest notebook also contains a separate MLP
-                            implementation, with a reported score of 55%.
-                        </p>
-
-                        <p>
-                            <strong>Approach:</strong> Text preprocessing ·
-                            TF-IDF feature extraction · Machine learning
-                            classifier comparison · Performance evaluation
-                        </p>
-
-                        <p>
-                            <strong>Technologies:</strong> Python · NLTK ·
-                            Scikit-learn · Pandas · NumPy
-                        </p>
-
-                        <p><strong>Year:</strong> 2024</p>
-
-                        <a href="https://github.com/adrikachowdhury/IronyScope"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                               GitHub Repository ↗
-                        </a>
-
-                    </div>
-
-                </details>
+                <p>
+                    A collection of projects exploring Artificial Intelligence,
+                    Natural Language Processing, and practical applications
+                    of machine learning alongside other side projects.
+                </p>
 
             </div>
 
-        </div>
+            <!-- ===================================== -->
+            <!-- AI & MACHINE LEARNING PROJECTS -->
+            <!-- ===================================== -->
 
-        <!-- Other Projects -->
-        <div class="project-category">
+            <div class="project-category">
 
-            <h3 class="project-category-title">
-                Other Projects
-            </h3>
+                <h3 class="project-category-title">
+                    AI & Machine Learning
+                </h3>
 
-            <div class="project-grid">
+                <div class="project-grid">
 
-                <!-- Vista.Q -->
-                <details class="project-card">
+                    <!-- ================================= -->
+                    <!-- 1. RESEARCH EVIDENCE AGENT -->
+                    <!-- ================================= -->
 
-                    <summary>
+                    <details class="project-card">
 
-                        <div class="project-cover">
-                            <img src="assets/images/projects/vista-q.png"
-                                 alt="Vista.Q">
-                        </div>
+                        <summary>
 
-                        <div class="project-info">
+                            <div class="project-cover">
+                                <img
+                                    src="assets/images/projects/research-evidence-agent.jpeg"
+                                    alt="Research Evidence Agent">
+                            </div>
 
-                            <h4>Vista.Q</h4>
+                            <div class="project-info">
 
-                            <p class="project-tech">
-                                Figma · UI Design · Wireframing · Prototyping
+                                <h4>Research Evidence Agent</h4>
+
+                                <p class="project-tech">
+                                    Python · Gemini API · Qdrant · FastAPI · Docker
+                                </p>
+
+                                <span class="project-expand">
+                                    View details +
+                                </span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+
+                            <span class="project-status">
+                                Completed · 2026
+                            </span>
+
+                            <p>
+                                A research assistant that retrieves relevant
+                                information from academic papers and generates
+                                answers grounded in the source documents.
+                                The project explores how Retrieval-Augmented
+                                Generation (RAG) can make it easier to find
+                                information in research papers without relying
+                                entirely on an LLM's existing knowledge.
                             </p>
 
-                            <span class="project-expand">View details +</span>
-
-                        </div>
-
-                    </summary>
-
-                    <div class="project-details">
-
-                        <p>
-                            A collaborative UI/UX design project developed
-                            during my internship at TechnoVista Ltd. The project
-                            involved designing Vista.Q, a real-time quality
-                            tracking system intended for garment factories.
-                        </p>
-
-                        <p>
-                            The interface was designed to support production
-                            monitoring and quality management, with a focus on
-                            making information accessible through a clear,
-                            user-friendly, and device-compatible design.
-                        </p>
-
-                        <p>
-                            <strong>Focus:</strong> UI design · Wireframing ·
-                            Prototyping
-                        </p>
-
-                        <p><strong>Tools:</strong> Figma</p>
-
-                        <p><strong>Year:</strong> 2025</p>
-
-                    </div>
-
-                </details>
-
-                <!-- Quality Information System -->
-                <details class="project-card">
-
-                    <summary>
-
-                        <div class="project-cover">
-                            <img src="assets/images/projects/qis.png"
-                                 alt="Quality Information System">
-                        </div>
-
-                        <div class="project-info">
-
-                            <h4>Quality Information System</h4>
-
-                            <p class="project-tech">
-                                Figma · UI Design · Wireframing · Prototyping
+                            <p>
+                                <strong>Approach:</strong> PyMuPDF was used to
+                                extract text from PDF documents, which was
+                                divided into smaller, overlapping chunks.
+                                These chunks were converted into vector
+                                embeddings using Google's Gemini embedding
+                                model and stored in a local Qdrant database.
                             </p>
 
-                            <span class="project-expand">View details +</span>
-
-                        </div>
-
-                    </summary>
-
-                    <div class="project-details">
-                    
-                        <p>
-                            A collaborative UI design project developed during
-                            my internship at TechnoVista Ltd. It focused on the
-                            Quality Information System (QIS), a digital platform
-                            by the Ministry of Agriculture of Bangladesh designed
-                            to provide accessible agricultural services.
-                        </p>
-                    
-                        <p>
-                            The design incorporated features such as weather
-                            updates and access to different services, with an
-                            emphasis on clear navigation and a user-friendly
-                            interface for farmers and other stakeholders.
-                        </p>
-                    
-                        <p>
-                            <strong>Focus:</strong> UI design · Wireframing ·
-                            Prototyping
-                        </p>
-                    
-                        <p><strong>Tools:</strong> Figma</p>
-                    
-                        <p><strong>Year:</strong> 2024</p>
-                    
-                    </div>
-
-                </details>
-
-                <!-- HomiFi -->
-                <details class="project-card">
-
-                    <summary>
-
-                        <div class="project-cover">
-                            <img src="assets/images/projects/homifi.png"
-                                 alt="HomiFi - Accommodation Booking System">
-                        </div>
-
-                        <div class="project-info">
-
-                            <h4>HomiFi - Accommodation Booking System</h4>
-
-                            <p class="project-tech">
-                                Figma · UI Design · Wireframing · Prototyping
+                            <p>
+                                When a question is submitted, the application
+                                retrieves relevant chunks and passes them
+                                to a Gemini model to generate an answer
+                                based on the retrieved content.
                             </p>
 
-                            <span class="project-expand">View details +</span>
-
-                        </div>
-
-                    </summary>
-                    
-                    <div class="project-details">
-
-                        <p>
-                            A collaborative UI design project for an
-                            accommodation booking system that brings together
-                            different types of stays, including hotels,
-                            apartments, private rooms, and locally hosted
-                            rentals.
-                        </p>
-
-                        <p>
-                            The project focused on making affordable and
-                            locally hosted accommodation options easier to
-                            discover and book. The proposed platform allows
-                            users to search and explore different stays through
-                            a unified interface.
-                        </p>
-
-                        <p>
-                            <strong>Focus:</strong> UI design · Wireframing ·
-                            Prototyping · Requirements Analysis
-                        </p>
-
-                        <p><strong>Tools:</strong> Figma</p>
-
-                        <p><strong>Year:</strong> 2024</p>
-
-                    </div>
-
-                </details>
-
-                <!-- Imbricating Colorful Squares -->
-                <details class="project-card">
-
-                    <summary>
-
-                        <div class="project-cover">
-                            <img src="assets/images/projects/imbricating-colorful-squares.png"
-                                 alt="Imbricating Colorful Squares">
-                        </div>
-
-                        <div class="project-info">
-
-                            <h4>Imbricating Colorful Squares</h4>
-
-                            <p class="project-tech">
-                                Python
+                            <p>
+                                <strong>Implementation:</strong> The backend
+                                was developed using FastAPI and containerised
+                                with Docker. A checkpoint mechanism was also
+                                implemented to help manage document indexing.
                             </p>
 
-                            <span class="project-expand">View details +</span>
+                            <p>
+                                <strong>Current scope:</strong> The prototype
+                                has been tested with two research papers,
+                                producing 92 document chunks for retrieval.
+                            </p>
+
+                            <!-- TECHNICAL WORKFLOW -->
+
+                            <div class="workflow-section">
+
+                                <h4>Technical Workflow</h4>
+
+                                <p class="workflow-intro">
+                                    The system follows two connected
+                                    processes: document indexing and
+                                    question answering.
+                                </p>
+
+                                <!-- DOCUMENT INDEXING -->
+
+                                <div class="workflow-group">
+
+                                    <span class="workflow-group-label">
+                                        A. Document Indexing
+                                    </span>
+
+                                    <div class="workflow-flow">
+
+                                        <div class="workflow-step">
+                                            <span class="workflow-number">01</span>
+                                            <h5>PDF Documents</h5>
+                                            <p>Research paper uploads</p>
+                                        </div>
+
+                                        <div class="workflow-arrow">→</div>
+
+                                        <div class="workflow-step">
+                                            <span class="workflow-number">02</span>
+                                            <h5>Text Extraction</h5>
+                                            <p>PyMuPDF</p>
+                                        </div>
+
+                                        <div class="workflow-arrow">→</div>
+
+                                        <div class="workflow-step">
+                                            <span class="workflow-number">03</span>
+                                            <h5>Text Chunking</h5>
+                                            <p>Overlapping chunks</p>
+                                        </div>
+
+                                        <div class="workflow-arrow">→</div>
+
+                                        <div class="workflow-step">
+                                            <span class="workflow-number">04</span>
+                                            <h5>Embeddings</h5>
+                                            <p>Gemini Embedding Model</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="workflow-down-arrow">↓</div>
+
+                                    <div class="workflow-step workflow-highlight">
+                                        <span class="workflow-number">05</span>
+                                        <h5>Vector Database</h5>
+                                        <p>Qdrant · Embedded document chunks</p>
+                                    </div>
+
+                                </div>
+
+                                <!-- QUESTION ANSWERING -->
+
+                                <div class="workflow-group">
+
+                                    <span class="workflow-group-label">
+                                        B. Question Answering
+                                    </span>
+
+                                    <div class="workflow-flow">
+
+                                        <div class="workflow-step">
+                                            <span class="workflow-number">01</span>
+                                            <h5>User Question</h5>
+                                            <p>Query submission</p>
+                                        </div>
+
+                                        <div class="workflow-arrow">→</div>
+
+                                        <div class="workflow-step">
+                                            <span class="workflow-number">02</span>
+                                            <h5>Query Embedding</h5>
+                                            <p>Gemini Embedding Model</p>
+                                        </div>
+
+                                        <div class="workflow-arrow">→</div>
+
+                                        <div class="workflow-step">
+                                            <span class="workflow-number">03</span>
+                                            <h5>Similarity Search</h5>
+                                            <p>Qdrant retrieval</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="workflow-down-arrow">↓</div>
+
+                                    <div class="workflow-step workflow-highlight">
+                                        <span class="workflow-number">04</span>
+                                        <h5>Retrieved Context</h5>
+                                        <p>Relevant document chunks</p>
+                                    </div>
+
+                                    <div class="workflow-down-arrow">↓</div>
+
+                                    <div class="workflow-step">
+                                        <span class="workflow-number">05</span>
+                                        <h5>LLM Answer Generation</h5>
+                                        <p>Gemini API · Retrieved context</p>
+                                    </div>
+
+                                    <div class="workflow-down-arrow">↓</div>
+
+                                    <div class="workflow-step workflow-result">
+                                        <h5>Evidence-Grounded Answer</h5>
+                                        <p>Generated response based on retrieved content</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <p>
+                                <strong>Technologies:</strong> Python ·
+                                PyMuPDF · Gemini API · Qdrant · FastAPI · Docker
+                            </p>
+
+                            <a href="https://github.com/adrikachowdhury/research-evidence-agent"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                GitHub Repository ↗
+                            </a>
 
                         </div>
 
-                    </summary>
+                    </details>
 
-                    <div class="project-details">
+                    <!-- ================================= -->
+                    <!-- 2. NLP STUDY ASSISTANT -->
+                    <!-- ================================= -->
 
-                        <p>
-                            A final graphics project developed using Python
-                            for the Code In Place Certification course.
-                        </p>
+                    <details class="project-card">
 
-                        <p>
-                            The design features a series of nested, vibrant
-                            squares, demonstrating the use of loops, color
-                            theory, and geometric precision.
-                        </p>
+                        <summary>
 
-                        <p><strong>Year:</strong> 2023</p>
+                            <div class="project-cover">
+                                <img
+                                    src="assets/images/projects/nlp-study-assistant.png"
+                                    alt="NLP Study Assistant">
+                            </div>
 
-                        <a href="https://github.com/adrikachowdhury/Imbricating-Colorful-Squares"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            GitHub Repository ↗
-                        </a>
+                            <div class="project-info">
 
-                    </div>
+                                <h4>NLP Study Assistant</h4>
 
-                </details>
+                                <p class="project-tech">
+                                    Python · Gemini API · Google GenAI SDK
+                                </p>
+
+                                <span class="project-expand">
+                                    View details +
+                                </span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+
+                            <span class="project-status">
+                                Completed · 2026
+                            </span>
+
+                            <p>
+                                A command-line AI learning assistant designed
+                                to support beginner NLP students. It provides
+                                concept explanations, practice questions,
+                                and feedback on submitted answers.
+                            </p>
+
+                            <p>
+                                The application also incorporates conversation
+                                history management, token tracking, response
+                                validation, and retry handling.
+                            </p>
+
+                            <!-- TECHNICAL WORKFLOW -->
+
+                            <div class="workflow-section">
+
+                                <h4>Technical Workflow</h4>
+
+                                <p class="workflow-intro">
+                                    The application manages the interaction
+                                    between the learner, the language model,
+                                    and the response-handling components.
+                                </p>
+
+                                <div class="workflow-flow">
+
+                                    <div class="workflow-step">
+                                        <span class="workflow-number">01</span>
+                                        <h5>User Input</h5>
+                                        <p>Question or answer submission</p>
+                                    </div>
+
+                                    <div class="workflow-arrow">→</div>
+
+                                    <div class="workflow-step">
+                                        <span class="workflow-number">02</span>
+                                        <h5>Input Handling</h5>
+                                        <p>Request processing</p>
+                                    </div>
+
+                                    <div class="workflow-arrow">→</div>
+
+                                    <div class="workflow-step">
+                                        <span class="workflow-number">03</span>
+                                        <h5>Prompt Construction</h5>
+                                        <p>Instructions and conversation context</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step workflow-highlight">
+                                    <span class="workflow-number">04</span>
+                                    <h5>Gemini API</h5>
+                                    <p>LLM-generated response</p>
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-branches">
+
+                                    <div class="workflow-branch">
+
+                                        <h5>Response Validation</h5>
+                                        <p>
+                                            Check and handle the generated response.
+                                        </p>
+
+                                    </div>
+
+                                    <div class="workflow-branch">
+
+                                        <h5>Token Tracking</h5>
+                                        <p>
+                                            Monitor token usage.
+                                        </p>
+
+                                    </div>
+
+                                    <div class="workflow-branch">
+
+                                        <h5>Conversation History</h5>
+                                        <p>
+                                            Maintain interaction context.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step workflow-result">
+                                    <h5>Learning Interaction</h5>
+                                    <p>
+                                        Explanations · Practice questions ·
+                                        Answer feedback
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <a href="https://github.com/adrikachowdhury/NLP-Study-Assistant"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                GitHub Repository ↗
+                            </a>
+
+                        </div>
+
+                    </details>
+
+                    <!-- ================================= -->
+                    <!-- 3. COMMUNITY STRESS TRACKER -->
+                    <!-- ================================= -->
+
+                    <details class="project-card">
+
+                        <summary>
+
+                            <div class="project-cover">
+                                <img
+                                    src="assets/images/projects/community-stress-tracker.png"
+                                    alt="Community Stress Tracker AI">
+                            </div>
+
+                            <div class="project-info">
+
+                                <h4>Community Stress Tracker AI</h4>
+
+                                <p class="project-tech">
+                                    Python · PyTorch · DistilBERT · Streamlit
+                                </p>
+
+                                <span class="project-expand">
+                                    View details +
+                                </span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+
+                            <span class="project-status">
+                                Group Project · 2026
+                            </span>
+
+                            <p>
+                                A group-developed AI system that analyses
+                                social media text to estimate community
+                                stress levels across five emotion classes.
+                            </p>
+
+                            <p>
+                                Built using DistilBERT, the system achieved
+                                82.67% accuracy and includes stress scoring,
+                                score normalisation, and batch-level
+                                aggregation.
+                            </p>
+
+                            <!-- TECHNICAL WORKFLOW -->
+
+                            <div class="workflow-section">
+
+                                <h4>Technical Workflow</h4>
+
+                                <p class="workflow-intro">
+                                    Social media text is processed by a
+                                    Transformer-based classifier before
+                                    being aggregated into community-level
+                                    stress indicators.
+                                </p>
+
+                                <div class="workflow-flow">
+
+                                    <div class="workflow-step">
+                                        <span class="workflow-number">01</span>
+                                        <h5>Social Media Text</h5>
+                                        <p>Text input</p>
+                                    </div>
+
+                                    <div class="workflow-arrow">→</div>
+
+                                    <div class="workflow-step">
+                                        <span class="workflow-number">02</span>
+                                        <h5>Preprocessing</h5>
+                                        <p>Text preparation</p>
+                                    </div>
+
+                                    <div class="workflow-arrow">→</div>
+
+                                    <div class="workflow-step">
+                                        <span class="workflow-number">03</span>
+                                        <h5>Tokenization</h5>
+                                        <p>Transformer input</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step workflow-highlight">
+                                    <span class="workflow-number">04</span>
+                                    <h5>DistilBERT Classification</h5>
+                                    <p>Emotion prediction</p>
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-branches">
+
+                                    <div class="workflow-branch">
+                                        <h5>Emotion Classification</h5>
+                                        <p>Five emotion classes</p>
+                                    </div>
+
+                                    <div class="workflow-branch">
+                                        <h5>Stress Scoring</h5>
+                                        <p>Score calculation and normalisation</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step">
+                                    <span class="workflow-number">05</span>
+                                    <h5>Batch Aggregation</h5>
+                                    <p>Community-level summaries</p>
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step workflow-result">
+                                    <h5>Streamlit Dashboard</h5>
+                                    <p>Community stress visualisation</p>
+                                </div>
+
+                            </div>
+
+
+                            <a href="https://github.com/adrikachowdhury/Community-Stress-Tracker-AI"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                GitHub Repository ↗
+                            </a>
+
+                        </div>
+
+                    </details>
+
+
+
+                    <!-- ================================= -->
+                    <!-- 4. PDCOVIDNET-2 -->
+                    <!-- ================================= -->
+
+                    <details class="project-card">
+
+                        <summary>
+
+                            <div class="project-cover">
+                                <img
+                                    src="assets/images/projects/pdcovidnet-2.jpeg"
+                                    alt="PDCOVIDNet-2">
+                            </div>
+
+                            <div class="project-info">
+
+                                <h4>PDCOVIDNet-2</h4>
+
+                                <p class="project-tech">
+                                    Python · PyTorch · Torchvision · Scikit-learn
+                                </p>
+
+                                <span class="project-expand">
+                                    View details +
+                                </span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+
+                            <span class="project-status">
+                                Course Project · 2026
+                            </span>
+
+                            <p>
+                                A Computer Vision and Robotics course project
+                                implementing a custom convolutional neural
+                                network to classify chest X-ray images into
+                                three categories: COVID-19, viral pneumonia,
+                                and normal.
+                            </p>
+
+                            <p>
+                                <strong>Architecture:</strong> The model uses
+                                two parallel branches of convolutional blocks
+                                with different dilation rates (1 and 2)
+                                to extract image features. Their outputs
+                                are combined and passed through additional
+                                convolutional and fully connected layers
+                                for classification.
+                            </p>
+
+                            <p>
+                                <strong>Implementation:</strong> Images from
+                                the Chest X-ray Images dataset were resized
+                                to 224 × 224 and converted to grayscale.
+                                WeightedRandomSampler, class-weighted loss,
+                                and image augmentation techniques were used
+                                during training.
+                            </p>
+
+                            <p>
+                                Model performance was evaluated using
+                                accuracy, precision, recall, and macro F1-score.
+                            </p>
+
+                            <p>
+                                The implementation was inspired by
+                                <em>PDCOVIDNet: A Parallel-Dilated
+                                Convolutional Neural Network Architecture
+                                for Detecting COVID-19 from Chest X-ray Images</em>
+                                (Chowdhury et al., 2020).
+                            </p>
+
+                            <!-- TECHNICAL WORKFLOW -->
+
+                            <div class="workflow-section">
+
+                                <h4>Technical Workflow</h4>
+
+                                <p class="workflow-intro">
+                                    The architecture processes X-ray images
+                                    through two parallel convolutional
+                                    branches, combining their extracted
+                                    features for final classification.
+                                </p>
+
+                                <div class="workflow-step">
+                                    <span class="workflow-number">01</span>
+                                    <h5>Chest X-ray Input</h5>
+                                    <p>Three-class image dataset</p>
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step workflow-highlight">
+                                    <span class="workflow-number">02</span>
+                                    <h5>Image Preprocessing</h5>
+                                    <p>
+                                        Grayscale conversion · 224 × 224 resizing
+                                        · Augmentation
+                                    </p>
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-split-title">
+                                    Parallel Convolutional Branches
+                                </div>
+
+                                <div class="workflow-branches">
+
+                                    <div class="workflow-branch">
+
+                                        <span class="workflow-number">A</span>
+
+                                        <h5>Branch 1</h5>
+
+                                        <p>
+                                            Convolutional blocks with
+                                            dilation rate 1
+                                        </p>
+
+                                    </div>
+
+                                    <div class="workflow-branch">
+
+                                        <span class="workflow-number">B</span>
+
+                                        <h5>Branch 2</h5>
+
+                                        <p>
+                                            Convolutional blocks with
+                                            dilation rate 2
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step workflow-highlight">
+                                    <span class="workflow-number">03</span>
+                                    <h5>Feature Fusion</h5>
+                                    <p>Combined branch outputs</p>
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step">
+                                    <span class="workflow-number">04</span>
+                                    <h5>Classification Layers</h5>
+                                    <p>Additional convolutional and fully connected layers</p>
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step workflow-result">
+                                    <h5>Three-Class Prediction</h5>
+
+                                    <div class="workflow-tags">
+                                        <span>COVID-19</span>
+                                        <span>Viral Pneumonia</span>
+                                        <span>Normal</span>
+                                    </div>
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step">
+                                    <h5>Model Evaluation</h5>
+                                    <p>
+                                        Accuracy · Precision · Recall · Macro F1
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <p>
+                                <strong>Technologies:</strong> Python · PyTorch ·
+                                Torchvision · NumPy · Pandas · Scikit-learn ·
+                                Matplotlib
+                            </p>
+
+                            <a href="https://github.com/adrikachowdhury/PDCOVIDNet-2"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                GitHub Repository ↗
+                            </a>
+
+                            <a href="https://doi.org/10.1007/s13755-020-00119-3"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Reference Paper ↗
+                            </a>
+
+                        </div>
+
+                    </details>
+
+                    <!-- ================================= -->
+                    <!-- 5. IRONY DETECTION -->
+                    <!-- ================================= -->
+
+                    <details class="project-card">
+
+                        <summary>
+
+                            <div class="project-cover">
+                                <img
+                                    src="assets/images/projects/irony-detection.jpeg"
+                                    alt="Irony Detection in Tweets">
+                            </div>
+
+                            <div class="project-info">
+
+                                <h4>Irony Detection in Tweets</h4>
+
+                                <p class="project-tech">
+                                    Python · NLTK · Scikit-learn · TF-IDF
+                                </p>
+
+                                <span class="project-expand">
+                                    View details +
+                                </span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+
+                            <span class="project-status">
+                                Course Project · 2024
+                            </span>
+
+                            <p>
+                                An NLP-based binary text classification
+                                project developed for the Introduction
+                                to Data Science course. The project
+                                focuses on detecting irony in Twitter
+                                text by classifying tweets as either
+                                ironic or non-ironic.
+                            </p>
+
+                            <p>
+                                The workflow includes tokenisation,
+                                language detection, emoticon-to-text
+                                conversion, accented character removal,
+                                stemming, and stopword removal.
+                            </p>
+
+                            <p>
+                                The processed text is transformed into
+                                n-gram TF-IDF features. Five Scikit-learn
+                                classifiers were implemented and compared:
+                                Multinomial Naive Bayes, LinearSVC,
+                                Stochastic Gradient Descent (SGD),
+                                Decision Tree, and Multi-layer Perceptron (MLP).
+                            </p>
+
+                            <p>
+                                <strong>Evaluation:</strong> In the original
+                                comparative evaluation, SGD achieved the
+                                best reported performance, with 65%
+                                accuracy and a 65% micro-average F1-score.
+                                MLP achieved an F1-score of 55% in that
+                                comparison.
+                            </p>
+
+                            <!-- TECHNICAL WORKFLOW -->
+
+                            <div class="workflow-section">
+
+                                <h4>Technical Workflow</h4>
+
+                                <p class="workflow-intro">
+                                    The project compares multiple traditional
+                                    machine learning classifiers using
+                                    TF-IDF representations of preprocessed tweets.
+                                </p>
+
+                                <div class="workflow-flow">
+
+                                    <div class="workflow-step">
+                                        <span class="workflow-number">01</span>
+                                        <h5>Twitter Dataset</h5>
+                                        <p>Tweet collection</p>
+                                    </div>
+
+                                    <div class="workflow-arrow">→</div>
+
+                                    <div class="workflow-step">
+                                        <span class="workflow-number">02</span>
+                                        <h5>Text Preprocessing</h5>
+                                        <p>Cleaning and normalisation</p>
+                                    </div>
+
+                                    <div class="workflow-arrow">→</div>
+
+                                    <div class="workflow-step">
+                                        <span class="workflow-number">03</span>
+                                        <h5>TF-IDF</h5>
+                                        <p>N-gram feature extraction</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-split-title">
+                                    Classifier Comparison
+                                </div>
+
+                                <div class="workflow-branches">
+
+                                    <div class="workflow-branch">
+                                        <h5>Naive Bayes</h5>
+                                    </div>
+
+                                    <div class="workflow-branch">
+                                        <h5>LinearSVC</h5>
+                                    </div>
+
+                                    <div class="workflow-branch">
+                                        <h5>SGD</h5>
+                                    </div>
+
+                                    <div class="workflow-branch">
+                                        <h5>Decision Tree</h5>
+                                    </div>
+
+                                    <div class="workflow-branch">
+                                        <h5>MLP</h5>
+                                    </div>
+
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step workflow-highlight">
+                                    <span class="workflow-number">04</span>
+                                    <h5>Performance Comparison</h5>
+                                    <p>Accuracy and micro-average F1-score</p>
+                                </div>
+
+                                <div class="workflow-down-arrow">↓</div>
+
+                                <div class="workflow-step workflow-result">
+                                    <h5>Comparative Findings</h5>
+                                    <p>
+                                        SGD · 65% accuracy in the original
+                                        comparative evaluation
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <p>
+                                <strong>Technologies:</strong> Python · NLTK ·
+                                Scikit-learn · Pandas · NumPy
+                            </p>
+
+                            <a href="https://github.com/adrikachowdhury/IronyScope"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                GitHub Repository ↗
+                            </a>
+
+                        </div>
+
+                    </details>
+
+                    <!-- ================================= -->
+                    <!-- 6. AI/ML PROJECT PLACEHOLDER -->
+                    <!-- ================================= -->
+
+                    <details class="project-card placeholder-card">
+
+                        <summary>
+
+                            <div class="project-cover cover-placeholder">
+                                <span>Coming Soon</span>
+                            </div>
+
+                            <div class="project-info">
+
+                                <h4>Upcoming AI/ML Project</h4>
+
+                                <p class="project-tech">
+                                    Technologies to be added
+                                </p>
+
+                                <span class="project-expand">
+                                    View details +
+                                </span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+                            <p>
+                                A new AI/ML project will be featured here soon.
+                            </p>
+                        </div>
+
+                    </details>
+
+                </div>
 
             </div>
 
-        </div>
+            <!-- ===================================== -->
+            <!-- OTHER PROJECTS -->
+            <!-- ===================================== -->
 
-    </section>
+            <div class="project-category">
 
-    <!-- Contact CTA -->
-    <section class="contact">
+                <h3 class="project-category-title">
+                    Other Projects
+                </h3>
 
-        <div class="section-heading">
+                <div class="project-grid">
 
-            <p class="section-label">HAVE A PROJECT IN MIND?</p>
+                    <!-- ================================= -->
+                    <!-- 1. VISTA.Q -->
+                    <!-- ================================= -->
 
-            <h2>Let's <span>Connect</span></h2>
+                    <details class="project-card">
 
-            <p class="contact-intro">
-                Interested in my work or have an opportunity to discuss?
-                Feel free to get in touch!
-            </p>
+                        <summary>
 
-        </div>
+                            <div class="project-cover">
+                                <img
+                                    src="assets/images/projects/vista-q.png"
+                                    alt="Vista.Q">
+                            </div>
 
-        <div class="cv-container">
+                            <div class="project-info">
 
-            <a href="index.html#contact" class="btn primary-btn">
-                Contact Me →
-            </a>
+                                <h4>Vista.Q</h4>
 
-        </div>
+                                <p class="project-tech">
+                                    Figma · UI Design · Wireframing · Prototyping
+                                </p>
 
-    </section>
+                                <span class="project-expand">View details +</span>
 
-    <!-- Footer -->
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+
+                            <p>
+                                A collaborative UI/UX design project developed
+                                during my internship at TechnoVista Ltd.
+                                The project involved designing Vista.Q,
+                                a real-time quality tracking system intended
+                                for garment factories.
+                            </p>
+
+                            <p>
+                                The interface was designed to support production
+                                monitoring and quality management, with a focus
+                                on making information accessible through a
+                                clear, user-friendly, and device-compatible design.
+                            </p>
+
+                            <p>
+                                <strong>Focus:</strong> UI design · Wireframing ·
+                                Prototyping
+                            </p>
+
+                            <p><strong>Tools:</strong> Figma</p>
+                            <p><strong>Year:</strong> 2025</p>
+
+                        </div>
+
+                    </details>
+
+                    <!-- ================================= -->
+                    <!-- 2. QUALITY INFORMATION SYSTEM -->
+                    <!-- ================================= -->
+
+                    <details class="project-card">
+
+                        <summary>
+
+                            <div class="project-cover">
+                                <img
+                                    src="assets/images/projects/qis.png"
+                                    alt="Quality Information System">
+                            </div>
+
+                            <div class="project-info">
+
+                                <h4>Quality Information System</h4>
+
+                                <p class="project-tech">
+                                    Figma · UI Design · Wireframing · Prototyping
+                                </p>
+
+                                <span class="project-expand">View details +</span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+
+                            <p>
+                                A collaborative UI design project developed
+                                during my internship at TechnoVista Ltd.
+                                It focused on the Quality Information System
+                                (QIS), a digital platform by the Ministry
+                                of Agriculture of Bangladesh designed to
+                                provide accessible agricultural services.
+                            </p>
+
+                            <p>
+                                The design incorporated features such as
+                                weather updates and access to different
+                                services, with an emphasis on clear navigation
+                                and a user-friendly interface.
+                            </p>
+
+                            <p>
+                                <strong>Focus:</strong> UI design · Wireframing ·
+                                Prototyping
+                            </p>
+
+                            <p><strong>Tools:</strong> Figma</p>
+                            <p><strong>Year:</strong> 2024</p>
+
+                        </div>
+
+                    </details>
+
+                    <!-- ================================= -->
+                    <!-- 3. HOMIFI -->
+                    <!-- ================================= -->
+
+                    <details class="project-card">
+
+                        <summary>
+
+                            <div class="project-cover">
+                                <img
+                                    src="assets/images/projects/homifi.png"
+                                    alt="HomiFi Accommodation Booking System">
+                            </div>
+
+                            <div class="project-info">
+
+                                <h4>HomiFi - Accommodation Booking System</h4>
+
+                                <p class="project-tech">
+                                    Figma · UI Design · Wireframing · Prototyping
+                                </p>
+
+                                <span class="project-expand">View details +</span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+
+                            <p>
+                                A collaborative UI design project for an
+                                accommodation booking system that brings
+                                together different types of stays, including
+                                hotels, apartments, private rooms, and
+                                locally hosted rentals.
+                            </p>
+
+                            <p>
+                                The project focused on making affordable
+                                and locally hosted accommodation options
+                                easier to discover and book through
+                                a unified interface.
+                            </p>
+
+                            <p>
+                                <strong>Focus:</strong> UI design · Wireframing ·
+                                Prototyping · Requirements Analysis
+                            </p>
+
+                            <p><strong>Tools:</strong> Figma</p>
+                            <p><strong>Year:</strong> 2024</p>
+
+                        </div>
+
+                    </details>
+
+                    <!-- ================================= -->
+                    <!-- 4. IMBRICATING COLORFUL SQUARES -->
+                    <!-- ================================= -->
+
+                    <details class="project-card">
+
+                        <summary>
+
+                            <div class="project-cover">
+                                <img
+                                    src="assets/images/projects/imbricating-colorful-squares.png"
+                                    alt="Imbricating Colorful Squares">
+                            </div>
+
+                            <div class="project-info">
+
+                                <h4>Imbricating Colorful Squares</h4>
+
+                                <p class="project-tech">
+                                    Python
+                                </p>
+
+                                <span class="project-expand">View details +</span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+
+                            <p>
+                                A final graphics project developed using
+                                Python for the Code In Place Certification
+                                course.
+                            </p>
+
+                            <p>
+                                The design features a series of nested,
+                                vibrant squares, demonstrating the use
+                                of loops, colour theory, and geometric
+                                precision.
+                            </p>
+
+                            <p><strong>Year:</strong> 2023</p>
+
+                            <a href="https://github.com/adrikachowdhury/Imbricating-Colorful-Squares"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                GitHub Repository ↗
+                            </a>
+
+                        </div>
+
+                    </details>
+
+                    <!-- ================================= -->
+                    <!-- 5. OTHER PROJECT PLACEHOLDER -->
+                    <!-- ================================= -->
+
+                    <details class="project-card placeholder-card">
+
+                        <summary>
+
+                            <div class="project-cover cover-placeholder">
+                                <span>Coming Soon</span>
+                            </div>
+
+                            <div class="project-info">
+
+                                <h4>Upcoming Project</h4>
+
+                                <p class="project-tech">
+                                    Details to be added
+                                </p>
+
+                                <span class="project-expand">View details +</span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+                            <p>
+                                A new project will be featured here soon.
+                            </p>
+                        </div>
+
+                    </details>
+
+                    <!-- ================================= -->
+                    <!-- 6. OTHER PROJECT PLACEHOLDER -->
+                    <!-- ================================= -->
+
+                    <details class="project-card placeholder-card">
+
+                        <summary>
+
+                            <div class="project-cover cover-placeholder">
+                                <span>Coming Soon</span>
+                            </div>
+
+                            <div class="project-info">
+
+                                <h4>Upcoming Project</h4>
+
+                                <p class="project-tech">
+                                    Details to be added
+                                </p>
+
+                                <span class="project-expand">View details +</span>
+
+                            </div>
+
+                        </summary>
+
+                        <div class="project-details">
+                            <p>
+                                A new project will be featured here soon.
+                            </p>
+                        </div>
+
+                    </details>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- CONTACT CTA -->
+        <!-- ===================================== -->
+
+        <section class="contact">
+
+            <div class="section-heading">
+
+                <p class="section-label">HAVE A PROJECT IN MIND?</p>
+
+                <h2>Let's <span>Connect</span></h2>
+
+                <p class="contact-intro">
+                    Interested in my work or have an opportunity to discuss?
+                    Feel free to get in touch!
+                </p>
+
+            </div>
+
+            <div class="cv-container">
+
+                <a href="index.html#contact" class="btn primary-btn">
+                    Contact Me →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+
     <footer>
 
         <p>© 2026 Adrika Chowdhury. All rights reserved.</p>
@@ -661,5 +1354,4 @@
     <script src="script.js"></script>
 
 </body>
-
 </html>

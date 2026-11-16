@@ -1,6 +1,8 @@
+
 /* ==============================
    General Settings
 ============================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,9 +26,11 @@ section {
     scroll-margin-top: 90px;
 }
 
+
 /* ==============================
    Navigation Bar
 ============================== */
+
 header {
     background-color: rgba(250, 248, 252, 0.95);
     padding: 20px 8%;
@@ -74,9 +78,11 @@ header {
     font-weight: 600;
 }
 
+
 /* ==============================
    Hero Section
 ============================== */
+
 .hero {
     min-height: 85vh;
     display: flex;
@@ -88,24 +94,6 @@ header {
         #F1EAF8,
         #F9EFF3
     );
-}
-
-.hero-socials {
-    display: flex;
-    gap: 22px;
-    margin-top: 22px;
-}
-
-.hero-socials a {
-    color: #80639A;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.hero-socials a:hover {
-    color: #76519B;
 }
 
 .hero-content {
@@ -142,14 +130,39 @@ header {
     margin-bottom: 30px;
 }
 
+
 /* ==============================
-   Hero Buttons
+   Hero Buttons & Social Links
 ============================== */
+
 .hero-buttons {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
 }
+
+.hero-socials {
+    display: flex;
+    gap: 22px;
+    margin-top: 22px;
+}
+
+.hero-socials a {
+    color: #80639A;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hero-socials a:hover {
+    color: #76519B;
+}
+
+
+/* ==============================
+   Buttons
+============================== */
 
 .btn {
     display: inline-block;
@@ -180,9 +193,11 @@ header {
     background-color: #F0E5F8;
 }
 
+
 /* ==============================
    About Section
 ============================== */
+
 .about {
     padding: 100px 12%;
     background-color: #FFFFFF;
@@ -210,7 +225,9 @@ header {
     color: #A77CCB;
 }
 
+
 /* About Layout */
+
 .about-container {
     display: flex;
     align-items: center;
@@ -252,7 +269,9 @@ header {
     margin-top: 18px;
 }
 
+
 /* About Text */
+
 .about-content {
     flex: 1.5;
 }
@@ -269,7 +288,9 @@ header {
     margin-bottom: 16px;
 }
 
+
 /* Academic Highlights */
+
 .about-highlights {
     display: flex;
     gap: 12px;
@@ -297,6 +318,9 @@ header {
     color: #817789;
 }
 
+
+/* CV & CTA Containers */
+
 .cv-container {
     margin-top: 28px;
     display: flex;
@@ -307,9 +331,11 @@ header {
     width: 100%;
 }
 
+
 /* ==============================
    Skills Section
 ============================== */
+
 .skills {
     padding: 100px 12%;
     background-color: #FAF8FC;
@@ -351,9 +377,11 @@ header {
     font-size: 13px;
 }
 
+
 /* ==============================
    Experience Section
 ============================== */
+
 .experience {
     padding: 100px 12%;
     background-color: #FFFFFF;
@@ -424,9 +452,11 @@ header {
     margin-bottom: 9px;
 }
 
+
 /* ==============================
    Certifications Section
 ============================== */
+
 .certifications {
     padding: 55px 12% 80px;
     background-color: #FFFFFF;
@@ -468,9 +498,11 @@ header {
     font-size: 12px;
 }
 
+
 /* ==============================
    Projects Section
 ============================== */
+
 .projects {
     padding: 100px 12%;
     background-color: #FAF8FC;
@@ -517,7 +549,13 @@ header {
     display: none;
 }
 
+.project-card summary:focus-visible {
+    outline-offset: -3px;
+}
+
+
 /* Project Cover Images */
+
 .project-cover {
     width: 100%;
     height: 190px;
@@ -537,7 +575,9 @@ header {
     transform: scale(1.04);
 }
 
+
 /* Project Cover Placeholders */
+
 .cover-placeholder {
     display: flex;
     align-items: center;
@@ -576,7 +616,9 @@ header {
     background: linear-gradient(135deg, #A77D9A, #D4AFC5, #EAD9E4);
 }
 
+
 /* Project Information */
+
 .project-info {
     padding: 20px;
 }
@@ -605,7 +647,9 @@ header {
     color: #80639A;
 }
 
+
 /* Expanded Project Details */
+
 .project-details {
     padding: 0 20px 20px;
     border-top: 1px solid #F0E7F5;
@@ -635,78 +679,50 @@ header {
     text-decoration: underline;
 }
 
+
 /* ==============================
-   Publication Card Styling
+   Publication & Information Cards
 ============================== */
+
+.publications {
+    padding: 100px 12%;
+    background-color: #FAF8FC;
+}
 
 .publication-container {
     max-width: 850px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 
 .publication-card {
     background-color: #FFFFFF;
     border: 1px solid #F0E7F5;
-    border-radius: 18px;
-    padding: 30px;
-    box-shadow: 0 5px 20px rgba(120, 90, 140, 0.06);
+    border-radius: 16px;
+    padding: 28px 30px;
+    box-shadow: 0 5px 20px rgba(120, 90, 140, 0.05);
 }
 
 .publication-status {
     display: inline-block;
     color: #80639A;
     background-color: #F3EBF9;
-    padding: 6px 13px;
+    padding: 5px 12px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 600;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
 }
 
 .publication-card h3 {
     color: #493E53;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.5;
-    margin-bottom: 15px;
+    margin: 12px 0;
 }
 
-.publication-card .publication-authors {
-    color: #665477;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.publication-card .publication-details {
-    color: #746C7B;
-    font-size: 13px;
-}
-
-.publication-card .author-note {
-    color: #817789;
-    font-size: 12px;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-.publication-link {
-    display: inline-block;
-    color: #936CB4;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.publication-link:hover {
-    color: #76519B;
-    text-decoration: underline;
-}
-
-/* ==============================
-   Research Page Enhancements
-============================== */
-
-/* Research Subheadings */
 .publication-card h4 {
     color: #665477;
     font-size: 16px;
@@ -714,7 +730,20 @@ header {
     margin-bottom: 10px;
 }
 
-/* Research Paragraphs */
+.publication-authors,
+.publication-card .publication-authors {
+    color: #665477;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.publication-details,
+.publication-card .publication-details {
+    color: #817789;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
 .publication-card > p {
     color: #746C7B;
     font-size: 14px;
@@ -722,7 +751,13 @@ header {
     margin-bottom: 15px;
 }
 
-/* Classification Task List */
+.publication-card .author-note {
+    color: #817789;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
 .publication-card > ul {
     padding-left: 22px;
     margin: 12px 0 20px;
@@ -739,7 +774,26 @@ header {
     color: #493E53;
 }
 
-/* Research Pipeline */
+.publication-link {
+    display: inline-block;
+    color: #936CB4;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: color 0.3s ease;
+}
+
+.publication-link:hover {
+    color: #76519B;
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   Research Pipeline
+============================== */
+
 .research-pipeline {
     max-width: 700px;
     margin: 30px auto 10px;
@@ -788,20 +842,18 @@ header {
     margin: 0 0 12px -12px;
 }
 
-/* Keyboard Focus */
-a:focus-visible,
-summary:focus-visible {
-    outline: 3px solid #936CB4;
-    outline-offset: 4px;
-    border-radius: 4px;
-}
 
 /* ==============================
    Contact Section
 ============================== */
+
 .contact {
     padding: 100px 12%;
-    background: linear-gradient(135deg, #F1EAF8, #F9EFF3);
+    background: linear-gradient(
+        135deg,
+        #F1EAF8,
+        #F9EFF3
+    );
 }
 
 .contact-intro {
@@ -846,9 +898,23 @@ summary:focus-visible {
     overflow-wrap: anywhere;
 }
 
+
+/* ==============================
+   Keyboard Focus
+============================== */
+
+a:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #936CB4;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+
 /* ==============================
    Footer
 ============================== */
+
 footer {
     background-color: #393342;
     color: #E9E2EE;
@@ -857,16 +923,21 @@ footer {
     font-size: 13px;
 }
 
+
 /* ==============================
    Responsive Design
 ============================== */
+
 @media (max-width: 900px) {
+
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+
 @media (max-width: 768px) {
+
     header {
         padding: 18px 6%;
     }
@@ -916,13 +987,17 @@ footer {
     }
 }
 
+
 @media (max-width: 600px) {
+
     .project-grid {
         grid-template-columns: 1fr;
     }
 }
 
+
 @media (max-width: 480px) {
+
     .navbar {
         align-items: flex-start;
         gap: 15px;
@@ -958,11 +1033,13 @@ footer {
     }
 }
 
+
 /* ==============================
    Reduced Motion Accessibility
 ============================== */
 
 @media (prefers-reduced-motion: reduce) {
+
     html {
         scroll-behavior: auto;
     }
@@ -974,4 +1051,231 @@ footer {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+}
+
+
+/* =========================================
+   PROJECT WORKFLOW DIAGRAMS
+========================================= */
+
+.workflow-section {
+    margin: 30px 0;
+    padding: 24px;
+    background: #fcf9ff;
+    border: 1px solid #eee4f5;
+    border-radius: 16px;
+}
+
+.workflow-section > h4 {
+    color: #805a9e;
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.workflow-intro {
+    color: #77717d;
+    font-size: 0.9rem;
+    margin-bottom: 22px;
+    line-height: 1.7;
+}
+
+.workflow-group {
+    margin: 22px 0;
+}
+
+.workflow-group-label {
+    display: inline-block;
+    color: #936eae;
+    background: #f1e8f8;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.workflow-flow {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.workflow-step {
+    flex: 1 1 135px;
+    min-width: 0;
+    padding: 16px 12px;
+    background: #ffffff;
+    border: 1px solid #eadff1;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(120, 85, 145, 0.05);
+}
+
+.workflow-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #f0e4f8;
+    color: #855fa3;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.workflow-step h5,
+.workflow-branch h5 {
+    color: #554361;
+    font-size: 0.88rem;
+    margin-bottom: 7px;
+    line-height: 1.4;
+}
+
+.workflow-step p,
+.workflow-branch p {
+    color: #817987;
+    font-size: 0.77rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.workflow-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b28bc9;
+    font-size: 1.4rem;
+    font-weight: 600;
+    flex: 0 0 auto;
+}
+
+.workflow-down-arrow {
+    text-align: center;
+    color: #b28bc9;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.workflow-highlight {
+    background: #f6effb;
+    border: 1px solid #dfc9ed;
+}
+
+.workflow-result {
+    background: #f8edf4;
+    border: 1px solid #edcfdf;
+}
+
+.workflow-result h5 {
+    color: #925f80;
+}
+
+.workflow-split-title {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #8966a1;
+    margin: 12px 0 16px;
+}
+
+.workflow-branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 12px;
+}
+
+.workflow-branch {
+    background: #ffffff;
+    border: 1px solid #eadff1;
+    border-radius: 12px;
+    padding: 17px 12px;
+    text-align: center;
+    position: relative;
+}
+
+.workflow-branch .workflow-number {
+    display: inline-flex;
+}
+
+.workflow-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 12px;
+}
+
+.workflow-tags span {
+    background: #ffffff;
+    color: #89668e;
+    border: 1px solid #e8d6e8;
+    border-radius: 20px;
+    padding: 6px 10px;
+    font-size: 0.75rem;
+}
+
+
+/* =========================================
+   PROJECT STATUS LABEL
+========================================= */
+
+.project-status {
+    display: inline-block;
+    background: #f2eaf8;
+    color: #805c99;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+
+/* =========================================
+   WORKFLOW RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+
+    .workflow-section {
+        padding: 17px;
+        margin: 24px 0;
+    }
+
+    .workflow-flow {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .workflow-step {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .workflow-arrow {
+        transform: rotate(90deg);
+        padding: 3px;
+    }
+
+    .workflow-branches {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .workflow-branches {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow-section {
+        padding: 14px;
+    }
+
 }
