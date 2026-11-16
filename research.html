@@ -7,7 +7,6 @@
 
     <title>Research | Adrika Chowdhury</title>
     <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg?v=2">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +15,6 @@
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
-
             <a href="index.html" class="logo">adrika<span>.</span></a>
 
             <ul class="nav-links">
@@ -25,7 +23,6 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="research.html" aria-current="page">Research</a></li>
             </ul>
-
         </nav>
     </header>
 
@@ -33,9 +30,7 @@
     <section class="publications">
 
         <div class="section-heading">
-
             <p class="section-label">RESEARCH & CONTRIBUTIONS</p>
-
             <h2>My <span>Research</span></h2>
 
             <p class="contact-intro">
@@ -43,7 +38,6 @@
                 language classification, and the application of AI to
                 real-world challenges.
             </p>
-
         </div>
 
         <div class="publication-container">
@@ -61,7 +55,8 @@
                 </h3>
 
                 <p class="publication-authors">
-                    Tustee Mazumdar and <strong>Adrika Chowdhury</strong>
+                    Tustee Mazumdar and
+                    <strong>Adrika Chowdhury</strong>
                 </p>
 
                 <p class="publication-authors">
@@ -74,28 +69,160 @@
                     Asian University for Women.
                 </p>
 
-                <br>
-
                 <p>
                     This research explores climate change discourse on
-                    social media through multiple text classification tasks,
-                    including relevance, stance, hate speech, direction,
-                    targets, and humour.
+                    social media through multiple text classification tasks.
+                    Using a collection of climate-related tweets, we
+                    investigated different aspects of public conversations
+                    around climate change.
+                </p>
+
+                <h4>Dataset: ClimaConvo</h4>
+
+                <p>
+                    We compiled ClimaConvo, a dataset of 15,309 English
+                    climate-related tweets collected through the official
+                    X/Twitter API between 1 January and 30 December 2022.
+                    The dataset was used to investigate six classification
+                    tasks.
+                </p>
+
+                <h4>Classification Tasks</h4>
+
+                <ul>
+                    <li><strong>Relevance:</strong> Identifying whether a
+                        tweet is relevant to climate change.</li>
+                    <li><strong>Stance:</strong> Identifying the position
+                        expressed towards climate change.</li>
+                    <li><strong>Hate Speech:</strong> Detecting hateful
+                        content in climate-related discussions.</li>
+                    <li><strong>Direction:</strong> Classifying the
+                        direction of the expressed climate discourse.</li>
+                    <li><strong>Targets:</strong> Identifying the target
+                        of the discussion.</li>
+                    <li><strong>Humour:</strong> Identifying humorous
+                        content in climate-related tweets.</li>
+                </ul>
+
+                <h4>Model Development</h4>
+
+                <p>
+                    The study compared four Transformer-based models:
+                    BERT, RoBERTa, DistilBERT, and ClimateBERT.
+                    Their representations were further processed through
+                    BiLSTM and MLP layers for classification.
                 </p>
 
                 <p>
-                    Using a dataset of 15,309 climate-related tweets,
-                    the study investigates Transformer-based models,
-                    including BERT, RoBERTa, DistilBERT, and ClimateBERT,
-                    alongside BiLSTM and MLP architectures.
+                    The data was divided into training and testing sets
+                    using an 80:20 split. Preprocessing included text
+                    normalisation, emoji and emoticon handling,
+                    stopword removal, and stemming. SMOTE was used
+                    to address class imbalance during training.
                 </p>
 
+                <h4>Evaluation and Findings</h4>
+
                 <p>
-                    DistilBERT achieved the strongest overall performance,
-                    with an average macro-F1 score of 77.8% across the
-                    classification tasks. The study also incorporated
-                    LIME for model interpretability.
+                    Models were evaluated using macro-averaged F1-score
+                    to account for class imbalance. DistilBERT achieved
+                    the strongest overall performance, with an average
+                    macro-F1 score of <strong>77.8%</strong> across the
+                    six classification tasks.
                 </p>
+
+                <p class="publication-details">
+                    The reported average represents performance across
+                    the task-specific evaluations, rather than the score
+                    of a single classification task.
+                </p>
+
+            </div>
+
+            <!-- Research Pipeline -->
+            <div class="publication-card">
+
+                <span class="publication-status">
+                    Research Workflow
+                </span>
+
+                <h3>ClimateNet: Research Pipeline</h3>
+
+                <p>
+                    The overall workflow moves from collecting and
+                    preparing climate-related tweets to training
+                    classification models and evaluating their
+                    performance across multiple tasks.
+                </p>
+
+                <div class="research-pipeline">
+
+                    <div class="pipeline-step">
+                        <span class="pipeline-number">01</span>
+                        <h4>Data Collection</h4>
+                        <p>
+                            15,309 English climate-related tweets
+                            collected through the official API.
+                        </p>
+                    </div>
+
+                    <div class="pipeline-arrow" aria-hidden="true">↓</div>
+
+                    <div class="pipeline-step">
+                        <span class="pipeline-number">02</span>
+                        <h4>Preprocessing</h4>
+                        <p>
+                            Text normalisation, emoji and emoticon
+                            handling, stopword removal, and stemming.
+                        </p>
+                    </div>
+
+                    <div class="pipeline-arrow" aria-hidden="true">↓</div>
+
+                    <div class="pipeline-step">
+                        <span class="pipeline-number">03</span>
+                        <h4>Class Imbalance Handling</h4>
+                        <p>
+                            SMOTE applied during training to address
+                            class imbalance.
+                        </p>
+                    </div>
+
+                    <div class="pipeline-arrow" aria-hidden="true">↓</div>
+
+                    <div class="pipeline-step">
+                        <span class="pipeline-number">04</span>
+                        <h4>Model Training</h4>
+                        <p>
+                            BERT, RoBERTa, DistilBERT, and ClimateBERT,
+                            followed by BiLSTM and MLP layers.
+                        </p>
+                    </div>
+
+                    <div class="pipeline-arrow" aria-hidden="true">↓</div>
+
+                    <div class="pipeline-step">
+                        <span class="pipeline-number">05</span>
+                        <h4>Multi-Aspect Classification</h4>
+                        <p>
+                            Relevance, stance, hate speech, direction,
+                            targets, and humour.
+                        </p>
+                    </div>
+
+                    <div class="pipeline-arrow" aria-hidden="true">↓</div>
+
+                    <div class="pipeline-step">
+                        <span class="pipeline-number">06</span>
+                        <h4>Model Evaluation</h4>
+                        <p>
+                            Task-level evaluation using macro-F1,
+                            with DistilBERT achieving a 77.8%
+                            average macro-F1 score.
+                        </p>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -155,17 +282,47 @@
                 </h3>
 
                 <p class="publication-authors">
-                    <strong>Chowdhury, A.*</strong>, Mazumdar, T.*, &
-                    Chy, A. N.
+                    <strong>Chowdhury, A.*</strong>, Mazumdar, T.*,
+                    & Chy, A. N.
                 </p>
 
                 <p>
-                    This ongoing work explores an ensemble-based approach
-                    to multi-aspect climate discourse classification.
-                    It investigates combining predictions from multiple
+                    Building on the earlier ClimateNet work, this ongoing
+                    research explores an ensemble-based approach to
+                    multi-aspect climate discourse classification.
+                    It investigates combining outputs from multiple
                     Transformer models through a meta-classification
-                    framework to improve classification performance
-                    across different tasks.
+                    framework.
+                </p>
+
+                <h4>Ensemble Approach</h4>
+
+                <p>
+                    Rather than relying on a single model's predictions,
+                    the approach combines outputs from four Transformer
+                    models and uses meta-classifiers to produce the
+                    final task predictions.
+                </p>
+
+                <h4>Explainability with LIME</h4>
+
+                <p>
+                    LIME (Local Interpretable Model-agnostic Explanations)
+                    is used to examine individual model predictions.
+                    It highlights words or text features that contribute
+                    to a particular prediction, helping us inspect how
+                    the classifier arrives at its decisions. In this work,
+                    it is used to explore selected stance and humour
+                    predictions.
+                </p>
+
+                <p class="author-note">
+                    *Co-first authors with equal contributions.
+                </p>
+
+                <p class="publication-details">
+                    This work is in preparation and has not yet been
+                    published.
                 </p>
 
             </div>
@@ -209,13 +366,10 @@
 
     <!-- Footer -->
     <footer>
-
         <p>© 2026 Adrika Chowdhury. All rights reserved.</p>
-
     </footer>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>

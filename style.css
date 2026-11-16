@@ -617,79 +617,99 @@ header {
     text-decoration: underline;
 }
 
+
 /* ==============================
-   Publications Section
+   Research Page Enhancements
 ============================== */
-.publications {
-    padding: 100px 12%;
-    background-color: #FFFFFF;
-}
 
-.publication-container {
-    max-width: 900px;
-    margin: auto;
-}
-
-.publication-card {
-    background-color: #FAF8FC;
-    border: 1px solid #F0E7F5;
-    border-radius: 17px;
-    padding: 30px;
-    margin-bottom: 22px;
-}
-
-.publication-status {
-    display: inline-block;
-    color: #80639A;
-    background-color: #F0E5F8;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    margin-bottom: 15px;
-}
-
-.in-preparation {
-    background-color: #F8EDF1;
-    color: #A16F85;
-}
-
-.publication-card h3 {
-    color: #393342;
-    font-size: 19px;
-    line-height: 1.5;
-    margin-bottom: 13px;
-}
-
-.publication-authors {
-    color: #665C70;
-    font-size: 14px;
+/* Research Subheadings */
+.publication-card h4 {
+    color: #665477;
+    font-size: 16px;
+    margin-top: 25px;
     margin-bottom: 10px;
 }
 
-.publication-details {
+/* Research Paragraphs */
+.publication-card > p {
     color: #746C7B;
     font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Classification Task List */
+.publication-card > ul {
+    padding-left: 22px;
+    margin: 12px 0 20px;
+}
+
+.publication-card > ul li {
+    color: #746C7B;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 9px;
+}
+
+.publication-card > ul li strong {
+    color: #493E53;
+}
+
+/* Research Pipeline */
+.research-pipeline {
+    max-width: 700px;
+    margin: 30px auto 10px;
+    padding-left: 12px;
+    border-left: 2px solid #E5D7F0;
+}
+
+.pipeline-step {
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid #F0E7F5;
+    border-radius: 13px;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 15px rgba(120, 90, 140, 0.04);
+}
+
+.pipeline-number {
+    display: inline-block;
+    color: #80639A;
+    background-color: #F3EBF9;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.pipeline-step h4 {
+    margin: 0 0 6px;
+    color: #493E53;
+    font-size: 16px;
+}
+
+.pipeline-step p {
+    color: #746C7B;
+    font-size: 13px;
     line-height: 1.7;
 }
 
-.author-note {
-    color: #8B8192;
-    font-size: 12px;
-    font-style: italic;
-    margin-top: 10px;
-}
-
-.publication-link {
-    display: inline-block;
-    margin-top: 18px;
-    color: #936CB4;
-    font-size: 14px;
+.pipeline-arrow {
+    color: #A77CCB;
+    font-size: 19px;
     font-weight: 600;
-    text-decoration: none;
+    text-align: center;
+    margin: 0 0 12px -12px;
 }
 
-.publication-link:hover {
-    color: #76519B;
+/* Keyboard Focus */
+a:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #936CB4;
+    outline-offset: 4px;
+    border-radius: 4px;
 }
 
 /* ==============================
@@ -843,5 +863,13 @@ footer {
     .experience-card,
     .publication-card {
         padding: 22px;
+    }
+
+    .research-pipeline {
+        padding-left: 8px;
+    }
+
+    .pipeline-step {
+        padding: 16px;
     }
 }
