@@ -635,6 +635,72 @@ header {
     text-decoration: underline;
 }
 
+/* ==============================
+   Publication Card Styling
+============================== */
+
+.publication-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.publication-card {
+    background-color: #FFFFFF;
+    border: 1px solid #F0E7F5;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(120, 90, 140, 0.06);
+}
+
+.publication-status {
+    display: inline-block;
+    color: #80639A;
+    background-color: #F3EBF9;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.publication-card h3 {
+    color: #493E53;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.publication-card .publication-authors {
+    color: #665477;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.publication-card .publication-details {
+    color: #746C7B;
+    font-size: 13px;
+}
+
+.publication-card .author-note {
+    color: #817789;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.publication-link {
+    display: inline-block;
+    color: #936CB4;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.publication-link:hover {
+    color: #76519B;
+    text-decoration: underline;
+}
 
 /* ==============================
    Research Page Enhancements
